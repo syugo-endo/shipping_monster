@@ -2471,9 +2471,9 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: rgba(#24b145);
-  border-color: #24b145;
-  /* opacity: 0.75; */
+  background-color: #24b145;
+  border-color:black;
+  opacity: 0.75;
 }
 .btn-primary:hover {
   color: #fff;
@@ -10103,10 +10103,11 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
+    opacity: 0.75;
     padding-top: 0.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
     border: none;
-    background-color: transparent;
+    background-color: #000;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
