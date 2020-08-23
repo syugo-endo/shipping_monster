@@ -10023,7 +10023,7 @@ p {
   margin-bottom: 4rem;
 }
 
-@media (min-width: 768px) {
+ {
   section {
     padding: 9rem 0;
   }
@@ -10167,13 +10167,14 @@ header.masthead .masthead-heading {
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    /* padding-bottom: 2.5rem; */
   }
   header.masthead .masthead-subheading {
     font-size: 3.25rem;
     font-style: italic;
     line-height: 2.25rem;
-    margin-bottom: 2rem;
+    margin-bottom: 13rem;
+    text-shadow: 1.5px 1.5px black;
   }
   header.masthead .masthead-heading {
     font-size: 4.5rem;
@@ -10197,7 +10198,7 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(85, 184, 85, 0.9);
   align-items: center;
   justify-content: center;
   opacity: 0;
