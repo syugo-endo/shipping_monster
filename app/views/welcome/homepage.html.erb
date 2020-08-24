@@ -33,6 +33,19 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">メンバー</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">コンタクト</a></li>
                     </ul>
+                    <ul class='lists-right'>
+                      <% if user_signed_in? %>
+                        <div class="nav-item">
+                          <%= link_to current_user.nickname, class: "user_nickname"%></li>
+                          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+                        </div>
+                      <% else %>
+                        <div class="nav-item">
+                          <%= link_to "ログイン", new_user_session_path, class: "post" %>
+                          <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+                        </div>
+                      <% end %>
+                  </ul>
                 </div>
             </div>
         </nav>
