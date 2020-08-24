@@ -36,8 +36,8 @@
                     <ul class='lists-right'>
                       <% if user_signed_in? %>
                         <div class="nav-item">
-                          <%= link_to current_user.nickname, class: "user_nickname"%></li>
-                          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+                          <%= link_to current_user.nickname, class: "btn-nickname"%></li>
+                          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "post" %>
                         </div>
                       <% else %>
                         <div class="nav-item">
