@@ -31,13 +31,25 @@
 
 /* 共通 */
 .indispensable {
-  background: #ea352d;
+  /* background: #ea352d;
   margin-left: 8px;
   padding: 3px;
   border-radius: 2px;
   color: #fff;
   font-size: 12px;
+  font-weight: bold; */
+  font-size: 0.8px;
+  position: relative;
+  display: inline-block;
   font-weight: bold;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-left: solid 4px #ea352d;
+  border-right: solid 4px #ea352d;
+  color: #ea352d;
+  background: repeating-linear-gradient(-45deg, rgb(254, 230, 230), rgb(254, 230, 230) 3px,rgb(254, 230, 230) 3px, rgb(254, 230, 230) 7px);
+  transition: .4s;
+  height: 14px;
 }
 
 .weight-bold-text {
