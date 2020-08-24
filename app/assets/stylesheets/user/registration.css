@@ -129,7 +129,7 @@
 }
 
 .form-bottom-text>span {
-  color: #0099e8;
+  color: #24b145;
   cursor: pointer;
 }
 
@@ -140,8 +140,8 @@
 
 .register-red-btn {
   width: 100%;
-  background: #ea352d;
-  border: 1px solid #ea352d;
+  background: #24b145;
+  border: 1px solid #24b145;
   color: #fff;
   line-height: 48px;
   font-size: 14px;
@@ -150,7 +150,7 @@
 
 .register-info {
   margin: 30px 180px 0 0;
-  color: #0099e8;
+  color: #24b145;
   text-align: right;
   cursor: pointer;
 }
