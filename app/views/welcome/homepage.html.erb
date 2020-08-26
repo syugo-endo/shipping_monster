@@ -31,7 +31,7 @@
                         <%# <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li> %>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">企業文化</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">メンバー</a></li>
-                        <%# <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">コンタクト</a></li> %>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#map">マップ</a></li>
                     </ul>
                     <ul class='lists-right'>
                       <% if user_signed_in? %>
@@ -294,6 +294,24 @@
                 </div>
             </div>
         </section>
+        <h2>本社</h2>
+            <div id='map'></div>
+
+          <style>
+            #map{
+            height: 600px;
+            }
+          </style>
+
+          <script>
+            function initMap(){
+            let map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+            });
+            }
+          </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUDTWlsu5nOEVlqvo53hNB8jPhdS8g5tc&callback=initMap" async defer></script>
         <!-- Clients-->
         <%# <div class="py-5">
             <div class="container">
