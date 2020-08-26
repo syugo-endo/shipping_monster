@@ -3,8 +3,10 @@
         <h2 class="section-heading text-uppercase">お問い合わせ</h2>
         <h3 class="section-subheading text-muted">お気軽に質問やお問い合わせください。</h3>
     </div>
+    
     <%= form_for @contact do |f| %>
-
+    
+    <%= render 'shared/error_messages', model: f.object %>
 
     <div class="form-group">
       <%= f.label :email, '返信先メールアドレス', class: 'form-text' %>
