@@ -22,6 +22,8 @@ Things you may want to cover:
 | password        | string | null: false                  |
 | family_name     | string | null: false                  |
 | first_name      | string | null: false                  |
+| nickname        | string | null: false                  |
+| birthday        | date   | null: false                  |
 ### Association
 
 - has_many :reviews
@@ -33,7 +35,9 @@ Things you may want to cover:
 | Column         | Type       | Options                        |
 | -------------- | ---------- | ------------------------------ |
 | user           | references | null: false, foreign_key: true |
+| title          | string     | null: false                    |
 | text           | text       | null: false                    |
+| rate           | float      | null: false                    |
 ### Association
 
 - belongs_to :user

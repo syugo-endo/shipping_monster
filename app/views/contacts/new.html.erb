@@ -1,0 +1,26 @@
+<section class="page-section" id="contact">
+    <div class="text-center">
+        <h2 class="section-heading text-uppercase">お問い合わせ</h2>
+        <h3 class="section-subheading text-muted">お気軽に質問やお問い合わせください。</h3>
+    </div>
+    
+    <%= form_for @contact do |f| %>
+    
+    <%= render 'shared/error_messages', model: f.object %>
+
+    <div class="form-group">
+      <%= f.label :email, '返信先メールアドレス', class: 'form-text' %>
+      <%= f.text_field :email, class: 'form-control', placeholder: 'メールアドレスを入力。' %>
+    </div>
+
+  <div class="form-group">
+    <%= f.label :message, 'お問い合わせ内容', class: 'form-text'%>
+    <%= f.text_area :message, size: '30x10', class: 'form-control', placeholder: 'メッセージを入力。' %>
+  </div>
+
+  <div class="text-center">
+    <div id="success">
+    </div>
+      <%= f.submit '送信', class: "btn btn-primary btn-xl text-uppercase"%>
+  </div>
+<% end %>
