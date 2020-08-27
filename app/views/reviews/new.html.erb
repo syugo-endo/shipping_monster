@@ -11,6 +11,7 @@
     <div class="form-group">
       <%= f.label :score, '満足度', class: 'form-text' %>
       <%#星入れる%>
+      <%= f.collection_select(:satisfaction_id, Satisfaction.all, :id, :name, {}, {class:"satisfaction-select"}) %>
     </div>
 
   <div class="form-group">
@@ -22,5 +23,7 @@
     <div id="success">
     </div>
       <%= f.submit '送信', class: "btn btn-primary btn-xl text-uppercase"%>
+      
+
   </div>
 <% end %>

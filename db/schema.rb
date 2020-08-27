@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2020_08_26_095429) do
     t.bigint "user_id", null: false
     t.string "name"
     t.string "content"
-    t.integer "score"
+    t.integer "satisfaction_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_reviews_on_user_id"

@@ -2,6 +2,7 @@ class ReviewsController < ApplicationController
   before_action :authenticate_user!, only: [:create, :new]
   def index
     @reviews = Review.all
+    @reviews = Review.order("created_at DESC")
   end
   
   def new
@@ -22,6 +23,6 @@ class ReviewsController < ApplicationController
 
   private
   def review_params
-    params.require(:review).permit(:name, :content, :score)
+    params.require(:review).permit(:name, :content, :satisfaction_id )
   end
 end
