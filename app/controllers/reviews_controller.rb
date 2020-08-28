@@ -2,7 +2,7 @@ class ReviewsController < ApplicationController
   before_action :authenticate_user!, only: [:create, :new]
   def index
     @reviews = Review.all
-    @reviews = Review.order("created_at DESC")
+    # @reviews = Review.order("created_at DESC")
   end
   
   def new
@@ -11,14 +11,13 @@ class ReviewsController < ApplicationController
 
   def create
    @review = Review.new(review_params)
-    # @review.user_id = current_user.id
-    # binding.pry
-    # # if @review.save
+    @review.user_id = current_user.id
+    if @review.save
     #   # binding.pry
-    #   redirect_to root_path
-    # else
-    #  render :new
-    # end
+      redirect_to root_path
+    else
+     render :new
+    end
   end
 
   private
