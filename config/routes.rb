@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   root 'welcome#homepage'
   resources :contacts, only: [:new, :create]
   resources :maps, only: [:index]
+  resources :reviews, only: [:index, :new, :create]
 end
