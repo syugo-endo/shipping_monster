@@ -38,13 +38,13 @@ en:
     map: "Map"
     member: "Start-up members"
   nav: 
-    login: "Login"
-    signup: "Signup"
-    logout: "Longout"
+    login: "Log-in"
+    signup: "Sign-up"
+    logout: "Log-out"
   bar:
     detail: "日本語にする"
   describe:
-    service: "海外直送よりも転送の方が格安！"
+    service: "Transfer is much cheaper than individual import!!!"
     culture: "These are elements of Shipping Monster and a code of condact for all employees."
     member: ""
   steps:
@@ -81,4 +81,37 @@ en:
     messagetitle: 'Text'
     messagetext: 'Your message'
     send: 'Send'
-    
+  account:
+    head: 'Create account'
+    nickname: 'Nick Name'
+    email: 'Email'
+    password: 'Password'
+    conformation: 'Re-enter Password'
+    requirement: '*must be included number and character.'
+    name: 'Name'
+    birth: 'Date of Birth'
+    submit: 'Sign Up'
+    nicknameeg: 'e.g.)Funky john'
+    emaileg: 'Your email'
+    passwordeg: 'At least 6 characters'
+    conformationeg: 'Same as above'
+    familynameeg: 'Smith'
+    firstnameeg: 'John'
+    required: '*required'
+    use: 'Term of Use'
+    info: '※ We want to make sure personal info is correct. Correction might take a longer time.'
+    agree: 'By clicking Sign Up, you agree to our'
+    agree2: '.'
+    identification: 'Personal Identification'
+    text: '**Your cooperation would be appriciated for safe and secure use.'
+  signin:
+    title: 'SIGN-IN'
+    mail: 'Email'
+    password: 'Password'
+    require: 'required'
+    login: 'Log-in'
+    maileg: 'Your Email'
+  footer2:
+    policy: 'Privacy Policy'
+    use: 'Term of Use'
+    signage: 'Signage on Specified Commercial Transactions'
