@@ -30,4 +30,90 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  title:
+    hello: "Hello world"
+    services: "Services"
+    cultures: "Cultures"
+    members: "Members"
+    map: "Map"
+    member: "Start-up members"
+  nav: 
+    login: "Log-in"
+    signup: "Sign-up"
+    logout: "Log-out"
+  bar:
+    detail: "日本語にする"
+  describe:
+    service: "Transfer is much cheaper than individual import!!!"
+    culture: "These are elements of Shipping Monster and a code of condact for all employees."
+    member: ""
+  steps:
+    one: "First"
+    two: "Step1"
+    three: "Step2"
+    four: "Step3"
+    five: "Step4"
+    six: "Step5"
+  tab:
+    left: "E-Commerce"
+    middle: "Responsive"
+    right: "Web Security"
+  explain:
+    left: "We provide many experiences via overseas shipping."
+    middle: "We aim to high position by adopting and changing even though the currrent situation is good."
+    right: "We provide a smooth and transparent shipment process."
+  name: 
+    left: "Naoto Uziie"
+    middle: "Shugo Endo"
+    right: "Sipumon"
+  profession:
+    left: "Engineer"
+    middle: "CEO"
+    right: "Image Character"
+  footer:
+    contact: "Contact Us"
+    privacy: "Privacy Policy"
+    use: "Term of Use"
+  contactform:
+    head: 'Please feel free to contact us!!'
+    emailtitle: 'Email'
+    emailfrom: 'Your email'
+    messagetitle: 'Text'
+    messagetext: 'Your message'
+    send: 'Send'
+  account:
+    head: 'Create account'
+    nickname: 'Nick Name'
+    email: 'Email'
+    password: 'Password'
+    conformation: 'Re-enter Password'
+    requirement: '*must be included number and character.'
+    name: 'Name'
+    birth: 'Date of Birth'
+    submit: 'Sign Up'
+    nicknameeg: 'e.g.)Funky john'
+    emaileg: 'Your email'
+    passwordeg: 'At least 6 characters'
+    conformationeg: 'Same as above'
+    familynameeg: 'Smith'
+    firstnameeg: 'John'
+    required: '*required'
+    use: 'Term of Use'
+    info: '※ We want to make sure personal info is correct. Correction might take a longer time.'
+    agree: 'By clicking Sign Up, you agree to our'
+    agree2: '.'
+    identification: 'Personal Identification'
+    text: '**Your cooperation would be appriciated for safe and secure use.'
+  signin:
+    title: 'SIGN-IN'
+    mail: 'Email'
+    password: 'Password'
+    require: '*required'
+    login: 'Log-in'
+    maileg: 'Your Email'
+  footer2:
+    policy: 'Privacy Policy'
+    use: 'Term of Use'
+    signage: 'Signage on Specified Commercial Transactions'
+  map:
+    head: 'Headquarter'

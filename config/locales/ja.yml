@@ -1,0 +1,88 @@
+ja:
+  title:
+    hello: "おはよう世界"
+    services: "サービス"
+    cultures: "企業文化"
+    members: "メンバー"
+    map: "マップ"
+    member: "スタートアップメンバー"
+  nav: 
+    login: "ログイン"
+    signup: "新規登録"
+    logout: "ログアウト"
+  bar:
+    detail: "Switch to English"
+  describe:
+    service: "海外直送よりも転送の方が格安！"
+    culture: "Shipping Monsterの構成要素であり、全従業員の行動規範です。"
+    member: ""
+  steps:
+    one: "はじめに"
+    two: "ステップ1"
+    three: "ステップ2"
+    four: "ステップ3"
+    five: "ステップ4"
+    six: "ステップ5"
+  tab:
+    left: "Webサービス"
+    middle: "責任"
+    right: "安全性"
+  explain:
+    left: "私たちは貿易を通じて経験を提供します。"
+    middle: "現状に満足せず、変化し適応することで高みを目指し続けます。"
+    right: "安定したサービスを提供し続けることで信頼を与ます。"
+  name: 
+    left: "氏家 直人"
+    middle: "遠藤 秀伍"
+    right: "シプモン"
+  profession:
+    left: "エンジニア"
+    middle: "CEO"
+    right: "イメージキャラクター"
+  footer:
+    contact: "お問い合わせ"
+    privacy: "プライバシーポリシー"
+    use: "利用規約"
+  contactform:
+    head: 'お気軽に質問やお問い合わせください。'
+    emailtitle: '返信先メールアドレス'
+    emailfrom: 'メールアドレスを入力。'
+    messagetitle: 'お問い合わせ内容'
+    messagetext: 'メッセージを入力。'
+    send: '送信'
+  account:
+    head: '会員情報入力'
+    nickname: 'ニックネーム'
+    email: 'メールアドレス'
+    password: 'パスワード'
+    conformation: 'パスワード(確認)'
+    requirement: '※英字と数字の両方を含めて設定してください'
+    name: 'お名前(全角)'
+    birth: '生年月日'
+    submit: '会員登録'
+    nicknameeg: 'ニックネームを入力。'
+    emaileg: 'メールアドレスを入力。'
+    passwordeg: 'パスワードを入力。'
+    conformationeg: '同じパスワードを入力。'
+    familynameeg: '例）山田'
+    firstnameeg: '例）太郎'
+    required: '必須'
+    use: '利用規約'
+    info: '※ 本人情報は正しく入力してください。会員登録後、修正するにはお時間を頂く場合があります。'
+    agree: '『会員登録』ボタンを押すことにより、'
+    agree2: 'に同意したものとみなします。'
+    identification: '本人確認'
+    text: '**安心・安全にご利用いただくために、お客さまの本人情報の登録にご協力ください。他のお客さまに公開されることはありません。'
+  signin:
+    title: '会員情報入力'
+    mail: 'メールアドレス'
+    password: 'パスワード'
+    require: '必須'
+    login: 'ログイン'
+    maileg: 'メールアドレスを入力。'
+  footer2:
+    policy: 'プライバシーポリシー'
+    use: 'Shipping Monster利用規約'
+    signage: '特定商取引に関する表記'
+  map:
+    head: '本社'
