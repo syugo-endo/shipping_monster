@@ -30,4 +30,47 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  title:
+    hello: "Hello world"
+    services: "Services"
+    cultures: "Cultures"
+    members: "Members"
+    map: "Map"
+    member: "Start-up members"
+  nav: 
+    login: "Login"
+    signup: "Signup"
+    logout: "Longout"
+  bar:
+    detail: "日本語にする"
+  describe:
+    service: "海外直送よりも転送の方が格安！"
+    culture: "These are elements of Shipping Monster and a code of condact for all employees."
+    member: ""
+  steps:
+    one: "First"
+    two: "Step1"
+    three: "Step2"
+    four: "Step3"
+    five: "Step4"
+    six: "Step5"
+  tab:
+    left: "E-Commerce"
+    middle: "Responsive"
+    right: "Web Security"
+  explain:
+    left: "We provide many experiences via overseas shipping."
+    middle: "We aim to high position by adopting and changing even though the currrent situation is good."
+    right: "We provide a smooth and transparent shipment process."
+  name: 
+    left: "Naoto Uziie"
+    middle: "Shugo Endo"
+    right: "Sipumon"
+  profession:
+    left: "Engineer"
+    middle: "CEO"
+    right: "Image Character"
+  footer:
+    contact: "Contact Us"
+    privacy: "Privacy Policy"
+    use: "Term of Use"

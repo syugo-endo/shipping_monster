@@ -27,11 +27,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">サービス</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio"><%= t"title.services"%></a></li>
                         <%# <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li> %>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">企業文化</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">メンバー</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#map">マップ</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"><%= t"title.cultures"%></a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team"><%= t"title.members"%></a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#map"><%= t"title.map"%></a></li>
                     </ul>
                     <ul class='lists-right'>
                       <% if user_signed_in? %>
@@ -41,8 +41,8 @@
                         </div>
                       <% else %>
                         <div class="nav-item">
-                          <%= link_to "ログイン", new_user_session_path, class: "post" %>
-                          <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+                          <%= link_to t('nav.login'), new_user_session_path, class: "post" %>
+                          <%= link_to t('nav.signup'), new_user_registration_path, class: "post" %>
                         </div>
                       <% end %>
                   </ul>
@@ -54,15 +54,21 @@
             <div class="container">
                 <div class="masthead-subheading">Welcome to Shipping Monster!!!</div>
                 <div class="masthead-heading text-uppercase"></div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger btn-ex" href="#services">詳しく見る</a>
+                <div class = 'language'>
+                <%if current_page?("/en")%>
+                  <%= link_to "日本語に変更", locale: :ja %>
+                <% else %>
+                  <%= link_to 'Switch to English', locale: :en %>
+                <% end %>
+                </div>
             </div>
         </header> 
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">サービス</h2>
-                    <h3 class="section-subheading text-muted">海外直送よりも転送の方が格安！</h3>
+                    <h2 class="section-heading text-uppercase"><%= t"title.services"%></h2>
+                    <h3 class="section-subheading text-muted"><%= t"describe.service"%></h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -74,7 +80,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="aaa" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">はじめに</div>
+                                <div class="portfolio-caption-heading"><%= t"steps.one"%></div>
                                 <div class="portfolio-caption-subheading text-muted">Illustration</div>
                             </div>
                         </div>
@@ -88,7 +94,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">ステップ1</div>
+                                <div class="portfolio-caption-heading"><%= t"steps.two"%></div>
                                 <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
                             </div>
                         </div>
@@ -102,7 +108,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">ステップ2</div>
+                                <div class="portfolio-caption-heading"><%= t"steps.three"%></div>
                                 <div class="portfolio-caption-subheading text-muted">Identity</div>
                             </div>
                         </div>
@@ -116,7 +122,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">ステップ3</div>
+                                <div class="portfolio-caption-heading"><%= t"steps.four"%></div>
                                 <div class="portfolio-caption-subheading text-muted">Branding</div>
                             </div>
                         </div>
@@ -130,7 +136,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/05-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">ステップ4</div>
+                                <div class="portfolio-caption-heading"><%= t"steps.five"%></div>
                                 <div class="portfolio-caption-subheading text-muted">Website Design</div>
                             </div>
                         </div>
@@ -144,7 +150,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/06-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">ステップ5</div>
+                                <div class="portfolio-caption-heading"><%= t"steps.six"%></div>
                                 <div class="portfolio-caption-subheading text-muted">Photography</div>
                             </div>
                         </div>
@@ -219,8 +225,8 @@
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">企業文化</h2>
-                    <h3 class="section-subheading text-muted">Shipping Monsterの構成要素であり、全従業員の行動規範です。</h3>
+                    <h2 class="section-heading text-uppercase"><%= t"title.cultures"%></h2>
+                    <h3 class="section-subheading text-muted"><%= t"describe.culture"%></h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
@@ -228,24 +234,24 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">私たちは経験を貿易を通じて提供します。</p>
+                        <h4 class="my-3"><%= t"tab.left"%></h4>
+                        <p class="text-muted"><%= t"explain.left"%></p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Responsive</h4>
-                        <p class="text-muted">現状に満足せず、変化し適応することで高みを目指し続けます。</p>
+                        <h4 class="my-3"><%= t"tab.middle"%></h4>
+                        <p class="text-muted"><%= t"explain.middle"%></p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">安定したサービスを提供し続けることで信頼を与ます。</p>
+                        <h4 class="my-3"><%= t"tab.right"%></h4>
+                        <p class="text-muted"><%= t"explain.right"%></p>
                     </div>
                 </div>
             </div>
@@ -254,15 +260,15 @@
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">スタートアップメンバー</h2>
+                    <h2 class="section-heading text-uppercase"><%= t"title.member"%></h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="" />
-                            <h4>氏家 直人</h4>
-                            <p class="text-muted">エンジニア</p>
+                            <h4><%=t"name.left"%></h4>
+                            <p class="text-muted"><%= t"profession.left"%></p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
@@ -271,8 +277,8 @@
                     <div class="col-lg-4">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="aaa" />
-                            <h4>遠藤 秀伍</h4>
-                            <p class="text-muted">システム設計</p>
+                            <h4><%=t"name.middle"%></h4>
+                            <p class="text-muted"><%= t"profession.middle"%></p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
@@ -281,8 +287,8 @@
                     <div class="col-lg-4">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="" />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Developer</p>
+                            <h4><%=t"name.right"%></h4>
+                            <p class="text-muted"><%= t"profession.right"%></p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
@@ -342,9 +348,9 @@
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <div class="col-lg-4 text-lg-right">
-                        <%= link_to "お問い合わせ", new_contact_path, class: "contact-tab" %>
-                        <a class="mr-3" href="#!">プライバシーポリシー</a>
-                        <a href="#!">利用規約</a>
+                        <%= link_to t('footer.contact'), new_contact_path, class: "contact-tab" %>
+                        <a class="mr-3" href="#!"><%= t"footer.privacy"%></a>
+                        <a href="#!"><%= t"footer.use"%></a>
                     </div>
                 </div>
             </div>

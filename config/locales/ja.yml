@@ -1,0 +1,45 @@
+ja:
+  title:
+    hello: "おはよう世界"
+    services: "サービス"
+    cultures: "企業文化"
+    members: "メンバー"
+    map: "マップ"
+    member: "スタートアップメンバー"
+  nav: 
+    login: "ログイン"
+    signup: "新規登録"
+    logout: "ログアウト"
+  bar:
+    detail: "Switch to English"
+  describe:
+    service: "海外直送よりも転送の方が格安！"
+    culture: "Shipping Monsterの構成要素であり、全従業員の行動規範です。"
+    member: ""
+  steps:
+    one: "はじめに"
+    two: "ステップ1"
+    three: "ステップ2"
+    four: "ステップ3"
+    five: "ステップ4"
+    six: "ステップ5"
+  tab:
+    left: "Webサービス"
+    middle: "責任"
+    right: "安全性"
+  explain:
+    left: "私たちは貿易を通じて経験を提供します。"
+    middle: "現状に満足せず、変化し適応することで高みを目指し続けます。"
+    right: "安定したサービスを提供し続けることで信頼を与ます。"
+  name: 
+    left: "氏家 直人"
+    middle: "遠藤 秀伍"
+    right: "シプモン"
+  profession:
+    left: "エンジニア"
+    middle: "CEO"
+    right: "イメージキャラクター"
+  footer:
+    contact: "お問い合わせ"
+    privacy: "プライバシーポリシー"
+    use: "利用規約"
