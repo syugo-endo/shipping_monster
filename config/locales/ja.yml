@@ -43,3 +43,10 @@ ja:
     contact: "お問い合わせ"
     privacy: "プライバシーポリシー"
     use: "利用規約"
+  contactform:
+    head: 'お気軽に質問やお問い合わせください。'
+    emailtitle: '返信先メールアドレス'
+    emailfrom: 'メールアドレスを入力。'
+    messagetitle: 'お問い合わせ内容'
+    messagetext: 'メッセージを入力。'
+    send: '送信'
