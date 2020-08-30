@@ -27,11 +27,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
+
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio"><%= t"title.services"%></a></li>
                         <%# <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li> %>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"><%= t"title.cultures"%></a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team"><%= t"title.members"%></a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#map"><%= t"title.map"%></a></li>
+
                     </ul>
                     <ul class='lists-right'>
                       <% if user_signed_in? %>
@@ -179,7 +181,7 @@
                     <li class="timeline-inverted">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
                         <div class="timeline-panel">
-                            <div class="timeline-heading">
+                            <%# <div class="timeline-heading">
                                 <h4>March 2011</h4>
                                 <h4 class="subheading">An Agency is Born</h4>
                             </div>
@@ -234,16 +236,20 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                         </span>
+
                         <h4 class="my-3"><%= t"tab.left"%></h4>
                         <p class="text-muted"><%= t"explain.left"%></p>
+
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
+
                         <h4 class="my-3"><%= t"tab.middle"%></h4>
                         <p class="text-muted"><%= t"explain.middle"%></p>
+
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -266,9 +272,11 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
+
                             <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="" />
                             <h4><%=t"name.left"%></h4>
                             <p class="text-muted"><%= t"profession.left"%></p>
+
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
@@ -287,8 +295,10 @@
                     <div class="col-lg-4">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="" />
+
                             <h4><%=t"name.right"%></h4>
                             <p class="text-muted"><%= t"profession.right"%></p>
+
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>

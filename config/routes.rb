@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   scope '(:locale)', locale: /#{I18n.available_locales.join('|')}/ do
     resources :welcome
     get 'maps/index'
@@ -7,5 +8,6 @@ Rails.application.routes.draw do
     root 'welcome#homepage'
     resources :contacts, only: [:new, :create]
     resources :maps, only: [:index]
+    resources :reviews, only: [:index, :new, :create]
   end
 end

@@ -1,0 +1,29 @@
+<section class="page-section" id="review">
+    <div class="text-center">
+        <h2 class="section-heading text-uppercase">レビュー</h2>
+        <h3 class="section-subheading text-muted">感動したことや改善点をお書き下さい</h3>
+    </div>
+    
+    <%= form_for @review do |f| %>
+    
+    <%= render 'shared/error_messages', model: f.object %>
+
+    <div class="form-group">
+      <%= f.label :score, '満足度', class: 'form-text' %>
+      <%#星入れる%>
+      <%= f.collection_select(:satisfaction_id, Satisfaction.all, :id, :name, {}, {class:"satisfaction-select"}) %>
+    </div>
+
+  <div class="form-group">
+    <%= f.label :content, 'コメント', class: 'form-text'%>
+    <%= f.text_area :content, size: '30x10', class: 'form-control', placeholder: '//レビューを入力//'%>
+  </div>
+
+  <div class="text-center">
+    <div id="success">
+    </div>
+      <%= f.submit '送信', class: "btn btn-primary btn-xl text-uppercase"%>
+      
+
+  </div>
+<% end %>
