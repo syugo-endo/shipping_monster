@@ -84,3 +84,5 @@ ja:
     policy: 'プライバシーポリシー'
     use: 'Shipping Monster利用規約'
     signage: '特定商取引に関する表記'
+  map:
+    head: '本社'

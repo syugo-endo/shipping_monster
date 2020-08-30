@@ -108,10 +108,12 @@ en:
     title: 'SIGN-IN'
     mail: 'Email'
     password: 'Password'
-    require: 'required'
+    require: '*required'
     login: 'Log-in'
     maileg: 'Your Email'
   footer2:
     policy: 'Privacy Policy'
     use: 'Term of Use'
     signage: 'Signage on Specified Commercial Transactions'
+  map:
+    head: 'Headquarter'
