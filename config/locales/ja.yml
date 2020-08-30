@@ -6,6 +6,7 @@ ja:
     members: "メンバー"
     map: "マップ"
     member: "スタートアップメンバー"
+    review: 'レビュー'
   nav: 
     login: "ログイン"
     signup: "新規登録"
@@ -86,3 +87,10 @@ ja:
     signage: '特定商取引に関する表記'
   map:
     head: '本社'
+  review:
+    head: 'レビュー'
+    text: '感動したことや改善点をお書き下さい。'
+    satisfaction: '満足度'
+    coment: 'コメント'
+    comentform: '//レビューを入力//'
+    submit: '送信'

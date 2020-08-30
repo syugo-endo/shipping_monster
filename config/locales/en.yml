@@ -37,6 +37,7 @@ en:
     members: "Members"
     map: "Map"
     member: "Start-up members"
+    review: 'Review'
   nav: 
     login: "Log-in"
     signup: "Sign-up"
@@ -117,3 +118,10 @@ en:
     signage: 'Signage on Specified Commercial Transactions'
   map:
     head: 'Headquarter'
+  review:
+    head: 'Review'
+    text: '感動したことや改善点をお書き下さい。'
+    satisfaction: 'Satisfaction'
+    coment: 'Coment'
+    comentform: '//Type your opinion//'
+    submit: 'Send'
