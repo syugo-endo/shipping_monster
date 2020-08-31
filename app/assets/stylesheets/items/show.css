@@ -87,7 +87,7 @@
   width: 20%;
   background-color: #eee;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -95,7 +95,7 @@
   width: 80%;
   padding: 20px;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 30px;
 }
 
 .option {

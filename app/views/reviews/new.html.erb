@@ -9,7 +9,12 @@
     <%= render 'shared/error_messages', model: f.object %>
 
     <div class="form-group">
+
+      <%= f.label :お客様のお名前 %>
+     <%= f.text_field :name %>
+
       <%= f.label :score, t('review.satisfaction'), class: 'form-text' %>
+
       <%#星入れる%>
       <%= f.collection_select(:satisfaction_id, Satisfaction.all, :id, :name, {}, {class:"satisfaction-select"}) %>
     </div>
