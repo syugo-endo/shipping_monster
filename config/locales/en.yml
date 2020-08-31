@@ -120,8 +120,10 @@ en:
     head: 'Headquarter'
   review:
     head: 'Review'
-    text: 'I'm glad to hear your opinion!'
+    text: 'I am glad to hear your opinion!'
     satisfaction: 'Satisfaction'
-    comment: 'Comment'
-    commentform: '//Type your opinion//'
+    coment: 'Coment'
+    comentform: '//Type your opinion//'
     submit: 'Send'
+    name: 'User Name'
+
