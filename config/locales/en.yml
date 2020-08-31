@@ -122,8 +122,9 @@ en:
     head: 'Review'
     text: 'I am glad to hear your opinion!'
     satisfaction: 'Satisfaction'
-    coment: 'Coment'
-    comentform: '//Type your opinion//'
+    comment: 'Comment'
+    commentform: '//Type your opinion//'
     submit: 'Send'
     name: 'User Name'
+    back: 'back'
 

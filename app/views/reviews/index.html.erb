@@ -3,7 +3,7 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-           Reviews
+           <%= t('title.review') %>
       </h1>
     <%= link_to 'Write a review',new_review_path, class: "subtitle" %>
     </div>
@@ -19,19 +19,19 @@
           <tbody>
           
             <tr>
-            <th class="detail-item">名前</th>
+            <th class="detail-item"><%= t('account.nickname') %></th>
             <td class="detail-value"><%= review.name%></td>
             </tr>
             <tr>
-            <th class="detail-item">ユーザー満足度</th>
+            <th class="detail-item"><%= t('review.satisfaction') %></th>
             <td class="detail-value"><%= review.satisfaction.name %></td>
             </tr>
             <tr>
-            <th class="detail-item">レビュー</th>
+            <th class="detail-item"><%= t('title.review') %></th>
             <td class="detail-value"><%= review.content%></td>
            </tr>
           </tbody>
       </table>
    <%end%>
-   <a class="btn" href="/">戻る</a>
+   <a class="btn" href="/"><%= t('review.back') %></a>
    
