@@ -29,10 +29,10 @@
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">サービス</a></li>
                         <%# <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">会社評価</a></li> %>
-                        <li class="nav-item"><%= link_to "会社評価", new_review_path, class: "nav-link js-scroll-trigger" %>
+                        <li class="nav-item"><%= link_to "会社レビュー",reviews_path, class: "nav-link js-scroll-trigger" %>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">企業文化</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">メンバー</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#map">マップ</a></li>
+                        <%# <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#map">マップ</a></li> %>
                     </ul>
                     <ul class='lists-right'>
                       <% if user_signed_in? %>
@@ -283,7 +283,7 @@
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="" />
                             <h4>シプモン</h4>
-                            <p class="text-muted">Lead Developer</p>
+                            <p class="text-muted">イメージキャラクター</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
@@ -313,6 +313,11 @@
             }
           </script>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUDTWlsu5nOEVlqvo53hNB8jPhdS8g5tc&callback=initMap" async defer></script>
+           
+          
+  
+
+           
         <!-- Clients-->
         <%# <div class="py-5">
             <div class="container">

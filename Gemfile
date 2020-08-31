@@ -59,6 +59,8 @@ gem 'pry-rails'
 
 gem 'active_hash'
 
+gem "bulma-rails"
+
 
 group :development do
   gem 'rubocop', require: false
