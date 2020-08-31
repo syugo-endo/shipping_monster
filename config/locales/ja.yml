@@ -91,6 +91,6 @@ ja:
     head: 'レビュー'
     text: '感動したことや改善点をお書き下さい。'
     satisfaction: '満足度'
-    coment: 'コメント'
-    comentform: '//レビューを入力//'
+    comment: 'コメント'
+    commentform: '//レビューを入力//'
     submit: '送信'

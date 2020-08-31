@@ -120,8 +120,8 @@ en:
     head: 'Headquarter'
   review:
     head: 'Review'
-    text: '感動したことや改善点をお書き下さい。'
+    text: 'I'm glad to hear your opinion!'
     satisfaction: 'Satisfaction'
-    coment: 'Coment'
-    comentform: '//Type your opinion//'
+    comment: 'Comment'
+    commentform: '//Type your opinion//'
     submit: 'Send'
