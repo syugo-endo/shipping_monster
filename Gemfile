@@ -62,6 +62,8 @@ gem 'rails-i18n'
 
 gem 'active_hash'
 
+gem "bulma-rails"
+
 
 group :development do
   gem 'rubocop', require: false
