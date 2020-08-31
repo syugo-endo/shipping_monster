@@ -1,5 +1,6 @@
 .satisfaction-select{
   height:  50px;
-  width: 400px;
+  width: 100ph;
   font-size: 40px;
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 }
