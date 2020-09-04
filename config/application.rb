@@ -12,7 +12,7 @@ module ShippingMonster
     config.load_defaults 6.0
     config.assets.enabled = true
     config.assets.version = '1.0'
-    config.i18n.available_locales = [:ja, :en]
+    config.i18n.available_locales = %i[ja en]
     config.i18n.enforce_available_locales = true
     config.i18n.default_locale = :ja
     # Settings in config/environments/* take precedence over those specified here.
