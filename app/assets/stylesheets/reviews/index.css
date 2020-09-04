@@ -1,9 +1,14 @@
 .title {
-  font-size :30vh;
-  font-weight: bold;
+  font-size :80px;
+  color: white;
+  font-style: italic;
+  line-height: 2.25rem;
+  margin-bottom: 13rem;
+  text-shadow: 1.5px 1.5px yellow;
 }
+
 .subtitle {
-  font-size :10vh;
+  font-size :50px;
   font-weight: bold;
 }
 
@@ -11,7 +16,6 @@
   font-size: 30px;
   text-decoration-line: underline;
 } 
-
 
 section#review {
 background-image: url("/assets/img/team/balloon.jpg")

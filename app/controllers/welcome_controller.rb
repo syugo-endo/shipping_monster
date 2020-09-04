@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
-  def homepage
-  end
+  def homepage; end
+
   def show
     redirect_to root_path
   end

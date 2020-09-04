@@ -1,5 +1,4 @@
 class ContactMailer < ApplicationMailer
-
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
@@ -8,6 +7,6 @@ class ContactMailer < ApplicationMailer
   def contact_mail(contact)
     @contact = contact
 
-    mail to: ENV['MAIL'], subject: "メールのタイトル"
+    mail to: ENV['MAIL'], subject: 'メールのタイトル'
   end
 end
