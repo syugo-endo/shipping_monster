@@ -2,9 +2,9 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-           Reviews
+           <%= t('title.review') %>
       </h1>
-    
+
     </div>
   </div>
 </section>
@@ -19,10 +19,11 @@
           <tbody>
           
             <tr>
-            <th class="detail-item">名前</th>
+            <th class="detail-item"><%= t('account.nickname') %></th>
             <td class="detail-value"><%= review.name%></td>
             </tr>
             <tr>
+
             <th class="detail-item">ユーザー満足度</th>
             
             <% if review.score == 5%>
@@ -41,12 +42,17 @@
              <td class="detail-value">⭐️</td>
              <%end%>
              </tr>
+
+        
             <tr>
-            <th class="detail-item">レビュー</th>
+            <th class="detail-item"><%= t('title.review') %></th>
             <td class="detail-value"><%= review.content%></td>
            </tr>
           </tbody>
       </table>
-   <% end %>
-   <a class="btn" href="/">戻る</a>
+
+
+   <%end%>
+   <a class="btn" href="/"><%= t('review.back') %></a>
+
    
