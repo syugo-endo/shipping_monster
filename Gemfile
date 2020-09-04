@@ -63,7 +63,12 @@ gem 'rails-i18n'
 
 gem 'active_hash'
 
-gem 'bulma-rails'
+
+gem "bulma-rails"
+
+gem 'rspec-rails', '~> 4.0.0'
+
+gem 'factory_bot_rails'
 
 group :development do
   gem 'rubocop', require: false
