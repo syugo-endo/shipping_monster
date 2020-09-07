@@ -1,7 +1,9 @@
 # README
 
 # 事業概要
-海外のサイトから購入をしたいけど、輸送費に対してネガディブな人が手軽に安く海外から日本に輸入できるアプリである。
+
+海外のサイトから直接商品購入を行いたいが、輸送費に対してネガディブな人々が手軽に安く、<br>
+海外から日本に輸入できるサイトである。
 
 ## URL
 
@@ -9,7 +11,7 @@
 
 ## システム
 日本からの購入者はその国のShipping monsterの倉庫に商品を送り届ける。<br>
-Shipping monsterの倉庫に送られきた商品に紐づいたユーザーへメールを送る。<br>確認が取れたユーザーは輸送の要求を送る。
+Shipping monsterの倉庫に送られきた商品に紐づいたユーザーへメールを送る。<br>確認が取れたユーザーは輸送の要求を送る。<br>
 現地Shipping monsterの倉庫から日本のShipping monsterの倉庫へ送られる。
 <br>
 日本のShipping monsterの倉庫から各ユーザーの住所へ送られる。
@@ -27,7 +29,8 @@ Shipping monsterの倉庫に送られきた商品に紐づいたユーザーへ�
 最低限必要な入力項目だけに絞って、ストレスなく登録をしてもらうことを優先した。
 ### review機能
 ユーザーが実際にサービスを利用して、レビューできる仕組みを作成。<br>
-SIPPING MONSTERを使って感動したことや改善が必要なことをユーザー同志で共有して、よりよいサービスの提供をできるため作成。
+SIPPING MONSTERを使って感動したことや改善が必要なことをユーザー同志で共有して、<br>
+よりよいサービスの提供をできるため作成。
 ### 問合せ機能
 会社に問い合わせる機能として作成。<br>
 サービス内容の疑問点や困ったことの窓口として設置。<br>
@@ -36,22 +39,10 @@ SIPPING MONSTERを使って感動したことや改善が必要なことをユ�
 日本に来ている外国人コミュニティはせまいので、<br>
 口コミで広がって多数の人に使用してもらえるようにと考えた。
 
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
 # テーブル設計
+## ER図
+https://gyazo.com/88433ea744194bfb5324b5c294a47ab1
+
 
 ## users テーブル
 
@@ -96,6 +87,14 @@ Things you may want to cover:
 
 - belongs_to :user
 
+
+* Ruby version　'rails', '~> 6.0.0'
+
+* System dependencies
+
+* Configuration
+
+* Database creation
 
 * Database initialization
 
