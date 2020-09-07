@@ -1,5 +1,30 @@
 # README
 
+# 事業概要
+海外のサイトから購入をしたいけど、輸送費に対してネガディブな人が手軽に安く海外から日本に輸入できるアプリである。
+
+## URL
+
+## テスト用アカウント
+
+## システム
+日本からの購入者はその国のShipping monsterの倉庫に商品を送り届ける。
+Shipping monsterの倉庫に送られきた商品に紐づいたユーザーへメールを送る。
+確認が取れたユーザーは輸送の要求を送る。
+現地Shipping monsterの倉庫から日本のShipping monsterの倉庫へ送られる。
+日本のShipping monsterの倉庫から各ユーザーの住所へ送られる。
+
+ユーザー登録をしないと、Shipping monsterの倉庫の住所を選択できない。
+
+## 目指した課題解決
+コロナウィルスの中、海外旅行好きでショッピングが好きなひとたちの為にこのアプリを作成した。
+欲しい商品を海外のサイトで買う時は、個人輸送になってしまい割高になることが多く、消費者にとってそこはデメリットである。
+そこを法人輸送で輸送費を安く済ませ、手軽に海外で買い物ができる仕組みがあったら便利だなという思考でSHIPPING MONSUTERを作成した
+
+## 洗い出し用件
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
