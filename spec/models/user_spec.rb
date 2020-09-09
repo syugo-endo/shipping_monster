@@ -32,12 +32,12 @@ describe User do
       it 'nicknameが空だと登録できない' do
         @user.nickname = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("Nicknameを入力してください")
+        expect(@user.errors.full_messages).to include('Nicknameを入力してください')
       end
       it 'emailが空では登録できない' do
         @user.email = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("Emailを入力してください")
+        expect(@user.errors.full_messages).to include('Emailを入力してください')
       end
       it 'emailに@がないと登録できない' do
         @user.email = 'kkkgmail.com'
@@ -53,31 +53,31 @@ describe User do
       it 'passwordが空では登録できない' do
         @user.password = nil
         @user.valid?
-        expect(@user.errors.full_messages).to include("Passwordを入力してください")
+        expect(@user.errors.full_messages).to include('Passwordを入力してください')
       end
       it 'passwordとpassword_confirmationが一致していないと登録できない' do
         @user.password_confirmation = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("Password confirmationとPasswordの入力が一致しません")
+        expect(@user.errors.full_messages).to include('Password confirmationとPasswordの入力が一致しません')
       end
 
       it 'passwordが5文字以下であれば登録できない' do
         @user.password = '12345'
         @user.password_confirmation = '12345'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Passwordは6文字以上で入力してください")
+        expect(@user.errors.full_messages).to include('Passwordは6文字以上で入力してください')
       end
       it 'passwordは半角英数字混合でないと登録できない' do
         @user.password = '123333'
         @user.password_confirmation = '123333'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Passwordは半角英数混合で入力してください。")
+        expect(@user.errors.full_messages).to include('Passwordは半角英数混合で入力してください。')
       end
       it 'family_nameとfirst_nameが全角で入力されている' do
         @user.family_name = 'yamada'
         @user.first_name = 'tarou'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Family nameは全角で入力してください。", "First nameは全角で入力してください。")
+        expect(@user.errors.full_messages).to include('Family nameは全角で入力してください。', 'First nameは全角で入力してください。')
       end
     end
   end
