@@ -1,4 +1,4 @@
-<section class="page-section" id="review">
+<section class="review-center" id="review">
     <div class="text-center">
         <h2 class="section-heading text-uppercase"><%= t('review.head')%></h2>
         <h3 class="section-subheading text-muted"><%= t('review.text')%></h3>
@@ -10,28 +10,46 @@
 
     <div class="form-group">
 
+
+     
+
       <%= f.label t('review.name') %>
      <%= f.text_field :name %>
 
+
       <%= f.label :score, t('review.satisfaction'), class: 'form-text' %>
 
-      <%#星入れる%>
-      <%= f.collection_select(:satisfaction_id, Satisfaction.all, :id, :name, {}, {class:"satisfaction-select"}) %>
+   
+	
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <div class="rating-box">
+      <div class="ratings">
+        <span class="fa fa-star-o" ></span>
+        <span class="fa fa-star-o" ></span>
+        <span class="fa fa-star-o" ></span>
+        <span class="fa fa-star-o" ></span>
+        <span class="fa fa-star-o" ></span>
+      </div>
+      <div class="rating-value-display"> </div>
+      <%# <div class= "star-hidden" > %>
+        <%= f.hidden_field :score,id: "rating-value" %> 
+         <%# <input type="text" id="rating-value" > %>
+      <%# </div> %>
     </div>
+ </div>
+    
 
   <div class="form-group">
-
-
-    <%= f.label :content, t('review.comment'), class: 'form-text'%>
+   <%= f.label :content, t('review.comment'), class: 'form-text'%>
     <%= f.text_area :content, size: '30x10', class: 'form-control', placeholder: t('review.commentform')%>
-
   </div>
 
   <div class="text-center">
     <div id="success">
     </div>
       <%= f.submit t('review.submit'), class: "btn btn-primary btn-xl text-uppercase"%>
-      
-
   </div>
 <% end %>

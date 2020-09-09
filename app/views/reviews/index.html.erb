@@ -1,20 +1,20 @@
-<header></header>
-<section class="hero is-success">
+<section class="page-section" id="review">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
            <%= t('title.review') %>
       </h1>
-    <%= link_to t('review.write'),new_review_path, class: "subtitle" %>
+
     </div>
   </div>
 </section>
-
+ <%= link_to 'Write a review',new_review_path, class: "subtitle" %>
+ 
   <% @reviews.each do |review| %>
-    </div>
+   </div>
 </div>
-      <table class="detail-table">
-      
+     
+
       <table class="detail-table">
           <tbody>
           
@@ -23,15 +23,36 @@
             <td class="detail-value"><%= review.name%></td>
             </tr>
             <tr>
-            <th class="detail-item"><%= t('review.satisfaction') %></th>
-            <td class="detail-value"><%= review.satisfaction.name %></td>
-            </tr>
+
+            <th class="detail-item">ユーザー満足度</th>
+            
+            <% if review.score == 5%>
+             <td class="detail-value">⭐️⭐️⭐️⭐️⭐️</td>
+             <%elsif%>
+             <% review.score == 4%>
+             <td class="detail-value">⭐️⭐️⭐️⭐️</td>
+             <%elsif%>
+             <% review.score == 3%>
+             <td class="detail-value">⭐️⭐️⭐️</td>
+             <%elsif%>
+             <% review.score == 2%>
+             <td class="detail-value">⭐️⭐️</td>
+             <%elsif%>
+             <% review.score == 1%>
+             <td class="detail-value">⭐️</td>
+             <%end%>
+             </tr>
+
+        
             <tr>
             <th class="detail-item"><%= t('title.review') %></th>
             <td class="detail-value"><%= review.content%></td>
            </tr>
           </tbody>
       </table>
+
+
    <%end%>
    <a class="btn" href="/"><%= t('review.back') %></a>
+
    

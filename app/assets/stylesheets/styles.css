@@ -59,11 +59,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 body {
-  margin: 0;
+  margin-top: 10px;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
+  
   color: #212529;
   text-align: left;
   background-color: #fff;
@@ -160,6 +160,7 @@ sup {
 }
 
 a {
+
   color: #24b145;
   text-decoration: none;
   background-color: transparent;
@@ -622,8 +623,8 @@ pre code {
 .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
   position: relative;
   width: 100%;
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .col {
@@ -10022,6 +10023,8 @@ p {
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;
+  color: #000;
+  font-style: italic;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -10227,7 +10230,7 @@ header.masthead .masthead-heading {
   background-color: #fff;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   margin-bottom: 0;
@@ -10522,6 +10525,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .language {
+ 
   -webkit-transform: skew(-15deg);
   transform: skew(-15deg);
   color: #fff;

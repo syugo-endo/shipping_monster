@@ -1,5 +1,7 @@
 /* 商品の概要 */
 
+
+
 .item-show {
   background-color: #f8f8f8;
   width: 100vw;
@@ -80,22 +82,22 @@
 
 .detail-table {
   margin-bottom: 30px;
-  width: 100%;
+  width: 75%;
 }
 
 .detail-item {
   width: 20%;
   background-color: #eee;
   border: 1px solid #dedede;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 
 .detail-value {
   width: 80%;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #dedede;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .option {

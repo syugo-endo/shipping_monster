@@ -1,6 +1,50 @@
+
 .satisfaction-select{
   height:  50px;
   width: 100ph;
   font-size: 40px;
   background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+body{
+	margin:0;
+   font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.rating-box{
+  background-color:white;
+  font-size: 30px
+	
+	margin:40px auto;
+	
+	
+	flex-direction: column;
+}
+
+.rating-box h1{
+	margin:0 0 30px;
+	font-size: 40px;
+}
+.rating-box .ratings .fa{
+  font-size: 40px;
+  color:#FF9800;
+  float: left;
+  cursor: pointer;
+}
+
+.star-hidden{
+  visibility: hidden;
+}
+
+.review-center{
+  padding: 6rem 0;
+  font-size: 1rem;
+  color: white;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
