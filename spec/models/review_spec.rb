@@ -8,7 +8,7 @@ RSpec.describe Review, type: :model do
   describe 'レビュー投稿' do
     context 'レビューが投稿できる時' do
       it 'nameとcontent、scoreが存在すれば送信できる' do
-        expect(@review).to be_vailid
+        expect(@review).to be_valid
       end
     end
 
