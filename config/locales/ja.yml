@@ -97,4 +97,15 @@ ja:
     name: 'お客様の名前'
     back: '戻る'
     write: 'レビューを書く'
-
+  services:
+    text1: "日本からの購入者様はその国のShipping monsterの倉庫に商品を送り届けます。"
+    text2: "Shipping monsterの倉庫に送られきた商品と登録ユーザー様を紐付け致します。"
+    text3: "商品を確認し、"
+    text4: "Shipping monsterの倉庫担当者から"
+    text5: "「商品が届きました」とメールを送り致します。"
+    text6: "そのお送りしたメールを確認できましたらユーザー様は"
+    text7: "輸送の要求を送ってください。"
+    text8: "現地Shipping monsterの倉庫から日本のShipping monsterの倉庫へ送られます。"
+    text9: "日本のShipping monsterの倉庫から各ユーザー様の住所へ送られます。"
+    text10: "★ユーザー登録を行なって頂きますとShipping monster各国の倉庫住所を"
+    text11: "ユーザー様へメールで送る仕様となっております。"

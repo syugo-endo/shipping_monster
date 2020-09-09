@@ -128,3 +128,15 @@ en:
     name: 'User Name'
     back: 'back'
     write: 'Write a review'
+  services:
+    text1: "We will ship items to the warehouse of Shipping Monster in each country."
+    text2: "We will confirm items are correct or incorrect"
+    text3: "then let you know by sending an email"
+    text4: "from the person in charge"
+    text5: "[Your item was received]"
+    text6: "in our warehouse."
+    text7: "After confirming the item, should send a request for transportation."
+    text8: "It will be shipped from a local Shipping Monster warehouse to Shipping Monster warehouse in your country."
+    text9: "And the item will ship to the addresses in each customer."
+    text10: "★To get addresses of Shipping Monster warehouse,"
+    text11: "you need user registration first."
