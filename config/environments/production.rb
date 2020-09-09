@@ -7,6 +7,7 @@ Rails.application.configure do
   config.public_file_server.enabled = true
   config.assets.compress = true
   config.assets.compile = false
+  config.assets.initialize_on_precompile = false
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
