@@ -4,4 +4,3 @@ FactoryBot.define do
     message { '質問は特にありませーん！' }
   end
 end
-
