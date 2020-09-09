@@ -1,5 +1,7 @@
 /* 商品の概要 */
 
+
+
 .item-show {
   background-color: #f8f8f8;
   width: 100vw;
@@ -80,7 +82,7 @@
 
 .detail-table {
   margin-bottom: 30px;
-  width: 100%;
+  width: 75%;
 }
 
 .detail-item {
