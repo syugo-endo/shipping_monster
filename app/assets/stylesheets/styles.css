@@ -10036,11 +10036,11 @@ p {
   margin-bottom: 1rem;
 }
 
- {
-  section {
+ 
+section {
     padding: 9rem 0;
   }
-}
+
 ::-moz-selection {
   background: #24b145;
   text-shadow: none;
