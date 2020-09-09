@@ -1,18 +1,48 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 事業概要
 
-Things you may want to cover:
+海外のサイトから直接商品購入を行いたいが、輸送費に対してネガディブな人々が手軽に安く、<br>
+海外から日本に輸入できるアプリである。
 
-* Ruby version
+## URL
 
-* System dependencies
+## テスト用アカウント
 
-* Configuration
+## システム
+日本からの購入者はその国のShipping monsterの倉庫に商品を送り届ける。<br>
+Shipping monsterの倉庫に送られきた商品に紐づいたユーザーへメールを送る。<br>確認が取れたユーザーは輸送の要求を送る。<br>
+現地Shipping monsterの倉庫から日本のShipping monsterの倉庫へ送られる。
+<br>
+日本のShipping monsterの倉庫から各ユーザーの住所へ送られる。
+<br>
+ユーザー登録をしないと、Shipping monsterの倉庫の住所を選択できない。
 
-* Database creation
+## 目指した課題解決
+コロナウィルスの中、海外旅行好きでショッピングが好きなひとたちの為にこのアプリを作成した。<br>
+欲しい商品を海外のサイトで買う時は、個人輸送になってしまい割高になることが多く、消費者にとってそこはデメリットである。<br>
+そこを法人輸送で輸送費を安く済ませ、手軽に海外で買い物ができる仕組みがあったら便利だなという思考でSHIPPING MONSUTERを作成した。
+
+## 大きく３点　洗い出し用件
+### devise導入
+サービス利用に当たって、ユーザ登録を必須とした。<br>
+最低限必要な入力項目だけに絞って、ストレスなく登録をしてもらうことを優先した。
+### review機能
+ユーザーが実際にサービスを利用して、レビューできる仕組みを作成。<br>
+SIPPING MONSTERを使って感動したことや改善が必要なことをユーザー同志で共有して、<br>
+よりよいサービスの提供をできるため作成。
+### 問合せ機能
+会社に問い合わせる機能として作成。<br>
+サービス内容の疑問点や困ったことの窓口として設置。<br>
+### 英語表記機能
+日本に住んでいる外国人にも利用してもらえるように英語版でもりようできるよう実装。<br>
+日本に来ている外国人コミュニティはせまいので、<br>
+口コミで広がって多数の人に使用してもらえるようにと考えた。
+
 # テーブル設計
+## ER図
+https://gyazo.com/88433ea744194bfb5324b5c294a47ab1
+
 
 ## users テーブル
 
@@ -35,9 +65,9 @@ Things you may want to cover:
 | Column         | Type       | Options                        |
 | -------------- | ---------- | ------------------------------ |
 | user           | references | null: false, foreign_key: true |
-| title          | string     | null: false                    |
-| text           | text       | null: false                    |
-| rate           | float      | null: false                    |
+| name           | string     | null: false                    |
+| content        | string     | null: false                    |
+| score          | integer    | null: false                    |
 ### Association
 
 - belongs_to :user
@@ -57,6 +87,14 @@ Things you may want to cover:
 
 - belongs_to :user
 
+
+* Ruby version　'rails', '~> 6.0.0'
+
+* System dependencies
+
+* Configuration
+
+* Database creation
 
 * Database initialization
 
