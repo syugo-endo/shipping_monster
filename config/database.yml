@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: shipping_monster_production
-  username: shipping_monster
-  password: <%= ENV['SHIPPING_MONSTER_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock

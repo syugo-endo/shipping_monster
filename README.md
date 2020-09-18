@@ -6,7 +6,7 @@
 海外から日本に輸入できるアプリである。
 
 ## URL
-
+https://shipping-monster99.herokuapp.com/
 ## テスト用アカウント
 
 ## システム
