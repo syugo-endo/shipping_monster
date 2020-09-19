@@ -10156,7 +10156,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("IMG_2634.jpeg");
+  background-image: url("/images/IMG_2634.jpeg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10463,7 +10463,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("pinimg.png");
+  background-image: url("/images/pinimg.png");
   /* background-repeat: no-repeat; */
   background-position: center;
 }

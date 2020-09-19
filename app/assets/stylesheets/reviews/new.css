@@ -19,9 +19,7 @@ body{
   background-color:white;
   font-size: 30px;
 	
-	margin:40px auto;
-	
-	
+	margin: auto;	
 	flex-direction: column;
 }
 
