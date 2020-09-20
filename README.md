@@ -6,9 +6,10 @@
 海外から日本に輸入できるアプリである。
 
 ## URL
-https://shipping-monster99.herokuapp.com/
+http://3.114.227.153/
 ## テスト用アカウント
-
+メールアドレス :suzukiichiro@gmail.com<br>
+パスワード :123abc
 ## システム
 日本からの購入者はその国のShipping monsterの倉庫に商品を送り届ける。<br>
 Shipping monsterの倉庫に送られきた商品に紐づいたユーザーへメールを送る。<br>確認が取れたユーザーは輸送の要求を送る。<br>
